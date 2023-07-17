@@ -70,31 +70,57 @@
 			</div>
 		</header>
 
-		<section class="relative pb-[56.25%]">
-			<div
-				class="flex flex-col items-center justify-center gap-5 sm:gap-10 px-2 top-3 sm:top-[25%] absolute w-full z-20"
-			>
-				<div
-					class="text-lg sm:text-3xl md:text-4xl lg:text-5xl text-white text-center"
-				>
-					<h1 class="uppercase font-bold">
-						Новые автомобили по&nbsp;цене заводов изготовителей!
-					</h1>
-					<span class="block text-xs sm:text-xl md:text-2xl mt-[2%]"
-						>Уже доступны для бронирования в&nbsp;дилерском центре Альфа в&nbsp;Самаре!</span
-					>
+		<section class="banner relative pb-[56.25%] max-[400px]:pb-[70%]">
+			<div class="absolute inset-0">
+				<div class="swiper banner-slider h-full text-white">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide banner-slide" data-swiper-autoplay="4000">
+							<div class="absolute inset-0 bg-black/50 z-[1]"></div>
+							<div class="container h-full relative z-[2]">
+								<div class="h-full flex flex-col justify-center">
+									<h2 class="text-lg sm:text-3xl md:text-4xl lg:text-5xl uppercase font-bold" data-swiper-parallax="-20%">Новые автомобили по&nbsp;цене заводов изготовителей!</h2>
+								<p
+									data-swiper-parallax="-60%"
+									class="text-xs sm:text-xl md:text-2xl sm:mt-5 mb-4 sm:mb-10"
+								>
+									Уже доступны для бронирования в&nbsp;дилерском центре Альфа в&nbsp;Самаре!
+								</p>
+								<div data-swiper-parallax="-55%">
+									<a
+										class="popup-link btn white btn-o text-xs sm:text-base !py-1 sm:!py-3"
+										href="#common-modal"
+										data-title="Узнать подробнее"
+										data-form_name="Узнать подробнее. Баннер"
+									>
+										Узнать подробнее
+									</a>
+								</div>
+								</div>
+							</div>
+							<img
+								src="img/banner.jpg"
+								class="absolute inset-0 h-full w-full object-cover object-center"
+								alt="ALT"
+								loading="lazy"
+							/>
+							<div class="swiper-lazy-preloader"></div>
+						</div>
+					</div>
+
+					<div class="swiper-pagination banner-pagination"></div>
+
+					<div class="autoplay-progress">
+						<svg viewBox="0 0 48 48">
+							<circle cx="24" cy="24" r="20"></circle>
+						</svg>
+						<span></span>
+					</div>
+
+					<div class="swiper-button-prev banner-button-prev !hidden md:!flex"></div>
+					<div class="swiper-button-next banner-button-next !hidden md:!flex"></div>
+
 				</div>
-				<a
-					class="popup-link btn white btn-o text-xs sm:text-base !py-1 sm:!py-3"
-					href="#common-modal"
-					data-title="Узнать подробнее"
-					data-form_name="Узнать подробнее. Баннер"
-				>
-					Узнать подробнее
-				</a>
 			</div>
-			<div class="absolute h-full w-full bg-black/40 z-10"></div>
-			<img src="img/banner.jpg" class="absolute h-full w-full object-cover" alt="LIVAN">
 		</section>
 
 
@@ -568,7 +594,7 @@
 
 		<script type="module" src="/src/js/app.js"></script>
 
-		<script>
+		<!-- <script>
 			if ("loading" in HTMLImageElement.prototype) {
 				const images = document.querySelectorAll('img[loading="lazy"]');
 				images.forEach((img) => {
@@ -581,7 +607,7 @@
 					"https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.1.2/lazysizes.min.js";
 				document.body.appendChild(script);
 			}
-		</script>
+		</script> -->
 	<!-- calltouch -->
 	<script>
 	(function(w,d,n,c){w.CalltouchDataObject=n;w[n]=function(){w[n]["callbacks"].push(arguments)};if(!w[n]["callbacks"]){w[n]["callbacks"]=[]}w[n]["loaded"]=false;if(typeof c!=="object"){c=[c]}w[n]["counters"]=c;for(var i=0;i<c.length;i+=1){p(c[i])}function p(cId){var a=d.getElementsByTagName("script")[0],s=d.createElement("script"),i=function(){a.parentNode.insertBefore(s,a)},m=typeof Array.prototype.find === 'function',n=m?"init-min.js":"init.js";s.async=true;s.src="https://mod.calltouch.ru/"+n+"?id="+cId;if(w.opera=="[object Opera]"){d.addEventListener("DOMContentLoaded",i,false)}else{i()}}})(window,document,"ct","m3jhllpy");
