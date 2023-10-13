@@ -1,3 +1,4 @@
+import './modules/scroll';
 import './modules/analytics';
 import './modules/slider';
 import './modules/functions';
