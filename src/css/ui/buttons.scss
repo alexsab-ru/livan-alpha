@@ -24,7 +24,7 @@
 }
 
 .btn-up {
-	@apply fixed z-10 bg-red right-5 bottom-[80px] sm:bottom-5 rounded cursor-pointer flex items-center justify-center w-12 h-12 transition-all duration-500 ease-in-out shadow-lg;
+	@apply fixed z-10 bg-accent right-5 bottom-[80px] sm:bottom-5 rounded cursor-pointer flex items-center justify-center w-12 h-12 transition-all duration-500 ease-in-out shadow-lg opacity-50;
 }
 
 .btn-up::before {
@@ -42,6 +42,6 @@
 
 @media (hover: hover) and (pointer: fine) {
 	.btn-up:hover {
-		@apply bg-red;
+		@apply opacity-100;
 	}
 }
